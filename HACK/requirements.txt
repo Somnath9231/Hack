@@ -1,0 +1,12 @@
+tkinter 
+pillow
+os-sys
+threading
+time
+speech_recognition
+requests
+playsound
+tempfile
+datetime
+json
+dotenv
