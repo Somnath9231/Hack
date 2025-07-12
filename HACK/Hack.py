@@ -9,6 +9,8 @@ from playsound import playsound
 import tempfile
 from datetime import datetime
 import json
+from dotenv import load_dotenv
+load_dotenv()
 
 # File names
 BG_IMAGE = '1.JPG.jpg'
@@ -17,9 +19,9 @@ BEEP_SOUND_PATH = 'Beep.mp3'
 SESSION_LOG = 'session_log.json'
 
 # API Keys
-GROQ_API_KEY = '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'
-ELEVENLABS_API_KEY = 'sk_af90ba6da907301122b4d11108afe9c1b87c455442e388e9'
-VOICE_ID = 'EzHcfR7B0Axr6TgAAU2G'
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")
+VOICE_ID = os.getenv("VOICE_ID")
 
 # Groq settings
 GROQ_URL = 'https://api.groq.com/openai/v1/chat/completions'
